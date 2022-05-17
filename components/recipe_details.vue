@@ -3,25 +3,36 @@
         <h3 class="header">
             {{recipeSection.title}}
         </h3>
+
         <p class="snippet">
             {{recipeSection.author}}
+             - 
+            {{recipeSection.date}}
         </p>
-        <img src="~assets/jpg/jamescook.jpg" alt="james cook" class="image">
-        <h2 class="text-container">
-            <h1>
-                INGREDIENTS
-            </h1>
-            {{recipeSection.ingredients}}
-        </h2>
+        
 
-        <h2 class="text-container">
-            <h1>
-                STEPS
-            </h1>
+        <p class="text-container">
+            {{recipeSection.category}}
+        </p>
+
+        <div class="centered">
+            <img src="~assets/jpg/jamescook.jpg" alt="james cook" class="image">
+        </div>
+
+        <h4 class="subsection">INGREDIENTS</h4>
+        <p class="text-container">
+            {{recipeSection.ingredients}}
+        </p>
+
+        <h4>STEPS</h4>
+        <p class="text-container">
             {{recipeSection.steps}}
-        </h2>
-        <button class="open btn"> LIKE </button>
-        <button class="open btn"> SAVE </button>
+        </p>
+        <div class="centered">
+            <button class="like-btn"> LIKE 🫶 </button>
+            <button class="save-btn"> SAVE 🛟 </button>
+        </div>
+        
     </div>
 </template>
 
@@ -34,18 +45,20 @@ import index from '../pages/index.vue'
 </script>
 
 <style scoped>
+    .subsection{
+        margin-top: 1rem;
+    }
     .card {
-        width: 31.5%;
-        height: 25rem;
-        border: none;
+        width: 40%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        border: 0.1 rem;
         overflow: hidden;
-        padding: 0;
+        padding: 2%;
         cursor: pointer;
+        border-radius: 1rem;
     }
-    .image {
-        height: 65%;
-        border-radius: 0.5rem;
-    }
+    
     .Hero {
         height: 50vh;
         position: relative;
@@ -55,11 +68,13 @@ import index from '../pages/index.vue'
         justify-content: space-between;
     }
     .text-container {
-        width: 50%;
-        margin-top: 4rem;
+        color: black;
+        font-size: 1.1rem;
+        width: 100%;
+        margin-top: 1rem;
     }
     .header {
-        margin-top: 2rem;
+        
         font-weight: 700;
         font-size: 2.5rem;
     }
@@ -67,11 +82,14 @@ import index from '../pages/index.vue'
         color: grey;
         font-size: 1.25rem;
     }
-    /* .image {
-        width: 27.5rem;
+    .image {
+        width: 80%;
+        height: 80%;
         margin-top: 2rem;
-        border-radius: 100%;
-    } */
+        vertical-align: middle;
+        align-items: center;
+        border-radius: 1rem;
+    }
     .overlay {
         background: rgba(0, 0, 0, 0);
         position: absolute;
@@ -79,10 +97,19 @@ import index from '../pages/index.vue'
         height: 100%;
         top: 0;
     }
-    .button {
-        padding: 1rem 4rem;
+    .like-btn {
+        padding: 1rem 3rem;
         border-radius: 100rem;
         background-color: rgb(231, 81, 43);
+        color: white;
+        width: 20rem;
+        font-weight: 700;
+        transition: 0.5s;
+    }
+    .save-btn {
+        padding: 1rem 3rem;
+        border-radius: 100rem;
+        background-color: rgb(20, 70, 59);
         color: white;
         width: 20rem;
         font-weight: 700;
@@ -98,5 +125,11 @@ import index from '../pages/index.vue'
     }
     .recipe_feed {
     margin-bottom: 5rem;
+    }
+    .centered {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
     }
 </style>

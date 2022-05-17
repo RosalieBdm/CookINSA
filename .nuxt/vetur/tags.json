@@ -1,0 +1,23 @@
+{
+  "Nav": {
+    "description": "Auto imported from components/Nav.vue"
+  },
+  "NuxtLogo": {
+    "description": "Auto imported from components/NuxtLogo.vue"
+  },
+  "SavedItems": {
+    "description": "Auto imported from components/Saved_items.vue"
+  },
+  "Tutorial": {
+    "description": "Auto imported from components/Tutorial.vue"
+  },
+  "RecipeDetails": {
+    "description": "Auto imported from components/recipe_details.vue"
+  },
+  "RecipeFeed": {
+    "description": "Auto imported from components/recipe_feed.vue"
+  },
+  "Recipecard": {
+    "description": "Auto imported from components/recipecard.vue"
+  }
+}

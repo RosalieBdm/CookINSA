@@ -2,11 +2,11 @@
     <div class="recipe_feed">
         <div class="col-3">
             <div class="text-container">
-                <h1 class="header">Latest Recipes</h1>
-                <p class="snippet">Hello guys!</p>
-                <button class="button btn">Add mine !</button>
+                <h1 class="header">Latest Recipes 🥗</h1>
+                <p class="snippet">Hello guys! Here students share their best recipes you can try at home 😁. Don't forget to add yours!!!!</p>
+                <button class="button btn">➕ Add recipe !</button>
             </div>
-            <img src="~assets/jpg/jamescook.jpg" alt="james cook" class="image">
+            <!-- <img src="~assets/jpg/jamescook.jpg" alt="james cook" class="image"> -->
         </div>
         
         
@@ -36,16 +36,27 @@
         margin-top: 2rem;
         font-weight: 900;
         font-size: 5rem;
+        width: 100%;
     }
     .snippet {
+        width: 100%;
+        height: 100%;
         color: grey;
         font-size: 1.25rem;
+        margin-top: 1rem;
     }
     .image {
-        width: 27.5rem;
+        width: 40%;
+        height: 40%;
         margin-top: 2rem;
         border-radius: 100%;
     }
+    /* .image {
+        width: 27.5rem;
+        margin-top: 2rem;
+        height: 20rem;
+        border-radius: 1rem;
+    } */
     .overlay {
         background: rgba(0, 0, 0, 0);
         position: absolute;
@@ -60,7 +71,7 @@
         color: white;
         width: 20rem;
         font-weight: 700;
-        transition: 0.5s;
+        transition: 0.2s;
     }
     .button:hover {
         width: 21.5rem;
