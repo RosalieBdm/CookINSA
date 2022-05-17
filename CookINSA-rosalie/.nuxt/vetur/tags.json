@@ -1,0 +1,17 @@
+{
+  "NuxtLogo": {
+    "description": "Auto imported from components/NuxtLogo.vue"
+  },
+  "Recipecard": {
+    "description": "Auto imported from components/recipecard.vue"
+  },
+  "RecipeDetails": {
+    "description": "Auto imported from components/recipe_details.vue"
+  },
+  "RecipeFeed": {
+    "description": "Auto imported from components/recipe_feed.vue"
+  },
+  "Tutorial": {
+    "description": "Auto imported from components/Tutorial.vue"
+  }
+}
