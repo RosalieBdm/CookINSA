@@ -1,18 +1,23 @@
 <template>
-  <div class="container">
-    <recipe_feed />
-    <recipecard
-      v-for="cardInfo in recipeCardsInfo"
-      :key="cardInfo.id"
-      :recipeSection="cardInfo"
-    />
+  <div>
+    <Nav />
+    <div class="container">
+      <!-- <Nav /> -->
+      <recipe_feed />
 
-    <recipe-details
-      v-for="cardInfo in recipeCardsInfo"
-      :key="cardInfo.id"
-      :recipeSection="cardInfo"
-    />
-    
+      <recipecard
+        v-for="cardInfo in recipeCardsInfo"
+        :key="cardInfo.id"
+        :recipeSection="cardInfo"
+      />
+
+      <recipe_details
+        v-for="cardInfo in recipeCardsInfo"
+        :key="cardInfo.id"
+        :recipeSection="cardInfo"
+      />
+      
+    </div>
   </div>
 </template>
 
@@ -20,11 +25,12 @@
   import recipecard from '../components/recipecard.vue'
   import recipe_feed from '../components/recipe_feed.vue'
   import recipe_details from '../components/recipe_details.vue'
+  import Nav from '../components/Nav.vue'
 
   import { recipe_cards_data } from "@/assets/data.js"
 
   export default {
-    components: { recipe_feed, recipecard, recipe_details },
+    components: { recipe_feed, recipecard, recipe_details, Nav },
     name: 'IndexPage',
     data() {
       return {
