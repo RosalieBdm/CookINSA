@@ -16,7 +16,8 @@
         </p>
 
         <div class="image">
-            <img src="~assets/jpg/plumpie.jpeg" alt="james cook" class="image">
+            <!-- <img src="~assets/jpg/plumpie.jpeg" alt="james cook" class="image"> -->
+            <img :src="'@/assets/jpg/${recipeSection.image}'" alt="fe" class="image">
         </div>
 
         <h4 class="subsection">INGREDIENTS</h4>
