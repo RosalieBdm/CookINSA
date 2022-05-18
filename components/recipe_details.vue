@@ -104,7 +104,7 @@ import index from '../pages/index.vue'
         color: white;
         width: 20rem;
         font-weight: 700;
-        transition: 0.5s;
+        transition: 0.2s;
     }
     .save-btn {
         padding: 1rem 3rem;
@@ -113,7 +113,7 @@ import index from '../pages/index.vue'
         color: white;
         width: 20rem;
         font-weight: 700;
-        transition: 0.5s;
+        transition: 0.2s;
     }
     .button:hover {
         width: 21.5rem;

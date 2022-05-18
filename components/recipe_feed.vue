@@ -1,16 +1,29 @@
 <template>
-    <div class="recipe_feed">
-        <div class="col-3">
+    <div>
+    <!-- <v-container> -->
+        <v-row>
+            <v-col cols="2">
+                <h1 class="header">Latest Recipes 🥗</h1>
+            </v-col>
+            <v-col cols="2">
+                <p class="snippet">Hello guys! Here students share their best recipes you can try at home 😁</p>
+                <p class="snippet">Don't forget to add yours!!!!</p>
+                <button class="button btn">➕ Add recipe !</button>
+            </v-col>
+        </v-row>
+    <!-- <v-container> -->
+    </div>
+
+    <!-- <div class="recipe_feed">
+        <div class="col-5">
             <div class="text-container">
                 <h1 class="header">Latest Recipes 🥗</h1>
                 <p class="snippet">Hello guys! Here students share their best recipes you can try at home 😁. Don't forget to add yours!!!!</p>
                 <button class="button btn">➕ Add recipe !</button>
             </div>
-            <!-- <img src="~assets/jpg/jamescook.jpg" alt="james cook" class="image"> -->
+            <img src="~assets/jpg/jamescook.jpg" alt="james cook" class="image">
         </div>
-        
-        
-    </div>
+    </div> -->
 </template>
 
 <script>
@@ -39,11 +52,15 @@
         width: 100%;
     }
     .snippet {
-        width: 100%;
+        /* width: 100%;
         height: 100%;
         color: grey;
         font-size: 1.25rem;
-        margin-top: 1rem;
+        margin-top: 1rem; */
+
+        color: grey;
+        font-size: 1.25rem;
+        float: left;
     }
     .image {
         width: 40%;
@@ -82,6 +99,6 @@
         }
     }
     .recipe_feed {
-    margin-bottom: 5rem;
+        margin-bottom: 5rem;
     }
 </style>

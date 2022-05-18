@@ -3,49 +3,42 @@
     "name": "my_items",
     "path": "/my_items",
     "component": "/Users/josephblanchard/Documents/insa3/pweb/CookINSA/pages/my_items.vue",
-    "chunkName": "pages/my_items",
-    "_name": "_55b9d4f4"
+    "chunkName": "pages/my_items"
   },
   {
     "name": "profile",
     "path": "/profile",
     "component": "/Users/josephblanchard/Documents/insa3/pweb/CookINSA/pages/profile.vue",
-    "chunkName": "pages/profile",
-    "_name": "_7e5301a0"
+    "chunkName": "pages/profile"
   },
   {
     "name": "publishing",
     "path": "/publishing",
     "component": "/Users/josephblanchard/Documents/insa3/pweb/CookINSA/pages/publishing.vue",
-    "chunkName": "pages/publishing",
-    "_name": "_6b0e2968"
+    "chunkName": "pages/publishing"
   },
   {
     "name": "recipes",
     "path": "/recipes",
     "component": "/Users/josephblanchard/Documents/insa3/pweb/CookINSA/pages/recipes/index.vue",
-    "chunkName": "pages/recipes/index",
-    "_name": "_4e77181f"
+    "chunkName": "pages/recipes/index"
   },
   {
     "name": "settings",
     "path": "/settings",
     "component": "/Users/josephblanchard/Documents/insa3/pweb/CookINSA/pages/settings.vue",
-    "chunkName": "pages/settings",
-    "_name": "_25941f3c"
+    "chunkName": "pages/settings"
   },
   {
     "name": "recipes-id",
     "path": "/recipes/:id",
     "component": "/Users/josephblanchard/Documents/insa3/pweb/CookINSA/pages/recipes/_id.vue",
-    "chunkName": "pages/recipes/_id",
-    "_name": "_6ada9647"
+    "chunkName": "pages/recipes/_id"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/josephblanchard/Documents/insa3/pweb/CookINSA/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_c5625fee"
+    "chunkName": "pages/index"
   }
 ]
