@@ -1,13 +1,5 @@
 <template>
-    <NuxtLink :to="'/recipe_details/${recipeSection.id}'" classs="card" >
-        <!-- <h4 class="header">
-            Recipe Title
-        </h4>
-        <p class="author">
-            by @anonynous_chef
-        </p> -->
-        <!-- <img src="~assets/jpg/plumpie.jpeg" alt="james cook" class="image"> -->
-
+    <NuxtLink :to="'/recipes/${recipeSection.id}'" class="card">
         <h3 class="header">
             {{recipeSection.title}}
         </h3>
@@ -19,22 +11,28 @@
         </p>
         
 
-        <p class="text-container">
+        <p class="category">
             {{recipeSection.category}}
         </p>
 
-        <!-- <div class="cards-container">
-             <LargeCard 
-                v-for="card in recipe_cards_data.cards"
-                :key="card.image"
-                :card="card"
-            />
-        </div> -->
+        <div class="image">
+            <img src="~assets/jpg/plumpie.jpeg" alt="james cook" class="image">
+        </div>
 
-        <img src="~assets/jpg/plumpie.jpeg" alt="plumpie" class="image">
-        <!-- <img src=recipeSection.image alt="plumpie" class="image"> -->
+        <h4 class="subsection">INGREDIENTS</h4>
+        <p class="text-container">
+            {{recipeSection.ingredients}}
+        </p>
 
-        <button class="save-btn"> Save </button>
+        <!-- <h4>STEPS</h4>
+        <p class="text-container">
+            {{recipeSection.steps}}
+        </p> -->
+        <div class="centered">
+            <!-- <button class="like-btn"> LIKE 🫶 </button> -->
+            <button class="save-btn"> SAVE 🛟 </button>
+        </div>
+        
     </NuxtLink>
 </template>
 
@@ -49,10 +47,10 @@
         margin-top: 1rem;
     }
     .card {
-        width: 40%;
+        width: 50%;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        border: 0.1 rem;
+        border: 0.4 rem;
         overflow: hidden;
         padding: 2%;
         cursor: pointer;
@@ -67,24 +65,36 @@
         align-items: flex-start;
         justify-content: space-between;
     }
-    .text-container {
+    .category {
         color: black;
         font-size: 1.1rem;
         width: 100%;
-        margin-top: 1rem;
+        /* margin-top: 1rem; */
+        float: right;
+    }
+    .text-container {
+        color: grey;
+        font-size: 1.1rem;
+        width: 100%;
+        /* margin-top: 1rem; */
+        float: right;
+        font-weight: 100;
+        font-style: italic; 
     }
     .header {
-        margin-top: 2rem;
+        /* margin-top: 2rem; */
         font-weight: 700;
         font-size: 2.5rem;
+        color: rgb(11, 131, 236);
     }
     .snippet {
         color: grey;
         font-size: 1.25rem;
+        float: left;
     }
     .image {
-        width: 40%;
-        height: 40%;
+        width: 95%;
+        height: 95%;
         vertical-align: middle;
         align-items: center;
         border-radius: 1rem;
@@ -96,7 +106,7 @@
         height: 100%;
         top: 0;
     }
-    .like-btn {
+    /* .like-btn {
         padding: 1rem 3rem;
         border-radius: 100rem;
         background-color: rgb(231, 81, 43);
@@ -104,13 +114,13 @@
         width: 20rem;
         font-weight: 700;
         transition: 0.5s;
-    }
+    } */
     .save-btn {
-        padding: 1rem 3rem;
+        padding: 0.7rem 2rem;
         border-radius: 100rem;
-        background-color: rgb(20, 70, 59);
+        background-color: rgb(0, 0, 0);
         color: white;
-        width: 20rem;
+        width: 12rem;
         font-weight: 700;
         transition: 0.5s;
         align-items: center;

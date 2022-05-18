@@ -11,11 +11,11 @@
         :recipeSection="cardInfo"
       />
 
-      <recipe_details
+      <!-- <recipe_details
         v-for="cardInfo in recipeCardsInfo"
         :key="cardInfo.id"
         :recipeSection="cardInfo"
-      />
+      /> -->
       
     </div>
   </div>
