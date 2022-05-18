@@ -5,7 +5,7 @@ export const recipe_cards_data = [
       author: "@jbl",
       date: "yy/mm/dd",
       category: "#pastas",
-      image: "~assets/jpg/plumpie.jpeg",
+      image: "salmon.jpeg",
       ingredients: "pastas, pesto, salt, parmesan cheese, olive oil, pepper",
       steps: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisl quam, pretium sit amet magna vel, vehicula cursus dolor. Praesent vitae enim urna. Etiam gravida risus non odio placerat maximus. In hac habitasse platea dictumst. In lobortis velit ac arcu porta sagittis. Mauris ultricies mi at arcu mattis viverra. In cursus vitae odio vel pulvinar. \n Nunc tristique rhoncus eros id aliquet. Phasellus in aliquam elit, a tristique urna. Quisque ut nisl sed sapien facilisis euismod cursus in dui. Aenean ut tortor ornare, sagittis mi fringilla, varius lorem. Maecenas non congue mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consequat congue metus, convallis eleifend tellus volutpat non. Maecenas pulvinar rhoncus leo. Integer dapibus sapien a odio blandit viverra."
 
@@ -36,7 +36,7 @@ export const recipe_cards_data = [
       author: "@jbl",
       date: "yy/mm/dd",
       category: "#pies",
-      image: "~assets/jpg/plumpie.jpeg",
+      image: "plumpie.jpeg",
       ingredients: "pie dough, plums, sugar",
       steps: "no steps for this one, too easy"
       // cards: [
