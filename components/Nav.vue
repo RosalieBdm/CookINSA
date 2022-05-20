@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <NuxtLink class="navbar-brand" to="/">CookINSA</NuxtLink>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -7,17 +7,17 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <!-- <li class="nav-item active">
                     <NuxtLink class="nav-link" to="/">🏠 Home <span class="sr-only">(current)</span></NuxtLink>
-                </li>
+                </li> -->
 
                  <li class="nav-item">
                     <NuxtLink class="nav-link" to="/publishing">➕ Publish</NuxtLink>
                 </li>
 
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <NuxtLink class="nav-link" to="/my_items">🧺 Saved Items</NuxtLink>
-                </li>
+                </li> -->
                
                 <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -32,13 +32,13 @@
                         <a class="dropdown-item" href="#">Something else here</a>
                     </div>
                 </li> -->
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <NuxtLink class="nav-link" to="/profile">😎 Profile</NuxtLink>
-                </li>
+                </li> -->
 
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <NuxtLink class="nav-link" to="/settings">⚙️ Settings</NuxtLink>
-                </li>
+                </li> -->
 
             </ul>
             <form class="form-inline my-2 my-lg-0">

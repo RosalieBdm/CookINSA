@@ -11,6 +11,7 @@ You can directly use them in pages and other components without the need to impo
 - `<SavedItems>` | `<saved-items>` (components/Saved_items.vue)
 - `<Tutorial>` | `<tutorial>` (components/Tutorial.vue)
 - `<Myitemscard>` | `<myitemscard>` (components/myitemscard.vue)
+- `<PublishingHeader>` | `<publishing-header>` (components/publishing_header.vue)
 - `<RecipeDetails>` | `<recipe-details>` (components/recipe_details.vue)
 - `<RecipeFeed>` | `<recipe-feed>` (components/recipe_feed.vue)
 - `<Recipecard>` | `<recipecard>` (components/recipecard.vue)

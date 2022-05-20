@@ -6,28 +6,22 @@
             <div class="text-container">
                 <h1 class="header">Saved Recipes 🥙</h1>
                 <!-- <p class="snippet">Hello guys! Here students share their best recipes you can try at home 😁... Don't forget to add yours!!!!</p> -->
-                <button class="button btn">➕ Add recipe !</button>
+                <!-- <button class="button btn">➕ Add recipe !</button> -->
             </div>
             <img src="~assets/jpg/wallet.png" alt="wallet" class="image">
-        </div>
 
-        <div>
-            Hello I am recipe /recipe/id
-            {{recipe}}
+            <!-- Hello I am recipe /recipe/id
+            {{recipe}} -->
             <!-- as we named it '_id' -->
         </div>
-
-        <!-- <recipecard
-            v-for="cardInfo in recipeCardsInfo"
-            :key="cardInfo.id"
-            :recipeSection="cardInfo"
-        /> -->
-
-        <myitemscard
-            v-for="cardInfo in recipeCardsInfo"
-            :key="cardInfo.id"
-            :recipeSection="cardInfo"
-        />
+        
+        <div>
+            <myitemscard
+                v-for="cardInfo in recipeCardsInfo"
+                :key="cardInfo.id"
+                :recipeSection="cardInfo"
+            />
+        </div>
 
         <!-- <div class="container">
             <Saved_items 
@@ -53,27 +47,26 @@ import recipecard from '../components/recipecard.vue'
 import Nav from '../components/Nav.vue'
 import myitemscard from '../components/myitemscard.vue'
 
-// export default {
-//     // layout: "no-nav",
-//     computed: {
-//         recipe() {
-//             return this.$store.getters.getProductById(this.$route.params.id);
-//         }   
-//     }
-// }
-
 import { recipe_cards_data } from "@/assets/data.js"
-import Myitemscard from '../components/myitemscard.vue'
 
-  export default {
-    components: { recipecard, Nav, Myitemscard },
+export default {
+    components: { recipecard, Nav, myitemscard },
     name: 'IndexPage',
     data() {
       return {
         recipeCardsInfo: recipe_cards_data
       }
     }
-  }
+}
+
+  // export default {
+    //     // layout: "no-nav",
+    //     computed: {
+    //         recipe() {
+    //             return this.$store.getters.getProductById(this.$route.params.id);
+    //         }   
+    //     }
+    // }
 </script>
 
 <style scoped>

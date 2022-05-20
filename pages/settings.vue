@@ -2,14 +2,25 @@
     <div>
         <Nav />
         <div>
-            Here are the available settings...
+            <!-- <Tutorial /> -->
+            Available soon...
         </div>
     </div>
 </template>
 
 <script>
+    import Tutorial from '../components/Tutorial.vue'
+    import { recipe_cards_data } from "@/assets/data.js"
+
+
     export default {
-        
+        components: {Tutorial },
+        name: 'Settings',
+        data() {
+            return {
+                recipeCardsInfo: recipe_cards_data
+            }
+        }
     }
 </script>
 
