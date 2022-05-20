@@ -16,7 +16,7 @@
         </p>
 
         <div class="image">
-            <img src="~assets/jpg/salmon.jpeg" alt="james cook" class="image">
+            <img src="~assets/jpg/bananabread.jpeg" alt="james cook" class="image">
             <!-- <img :src="'~assets/jpg/${recipeSection.image}'" alt="fe" class="image"> -->
         </div>
 
@@ -29,10 +29,7 @@
         <p class="text-container">
             {{recipeSection.steps}}
         </p> -->
-        <div class="centered">
-            <!-- <button class="like-btn"> LIKE 🫶 </button> -->
-            <button class="save-btn"> SAVE 🛟 </button>
-        </div>
+        
         
     </NuxtLink>
 </template>

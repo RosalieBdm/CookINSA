@@ -59,5 +59,15 @@ export const recipe_cards_data = [
       //     image: "fe6.jpg"
       //   }
       // ]
+    },
+    {
+      id: 3,
+      title: "Banana Bread",
+      author: "@jbl",
+      date: "yy/mm/dd",
+      category: "#cake",
+      image: "bananabread.jpeg",
+      ingredients: "floor, banana, sugar, nuts, eggs, baking powder",
+      steps: "crush the bananas, add sugar, then eggs, then floor and baking powder."
     }
   ]

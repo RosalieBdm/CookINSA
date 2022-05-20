@@ -37,10 +37,10 @@
 </template>
 
 <script>
-import index from '../pages/index.vue'
+    import index from '../pages/index.vue'
     export default {
-  components: { index },
-        props: ["recipeSection"] // property pasted into the   `:recipeSection="cardInfo"`
+        components: { index },
+         props: ["recipeSection"] // property pasted into the   `:recipeSection="cardInfo"`
     }
 </script>
 

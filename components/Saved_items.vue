@@ -4,16 +4,31 @@
         <img :src="require(`@/assets/jpg/jamescook.jpg`)" alt="">
         
         <div class="text-container">
-            <h4> {{item.title}} </h4>
-            <p> {{item.steps}} </p>
+            <h4> {{recipe.title}} </h4>
+            <p> {{recipe.steps}} </p>
         </div>
     </div>
+    
 </template>
 
 <script>
+    // export default {
+    //     props: ['item']
+    // }
+
     export default {
-        props: ['item']
+        props: ['recipe']
     }
+
+    // import { mapState } from 'vuex';
+    // export default {
+    //     layout: "no-nav",
+    //     computed: {
+    //         ...mapState([
+    //             'recipes'
+    //         ])
+    //     }
+    // }
 </script>
 
 <style scoped>
