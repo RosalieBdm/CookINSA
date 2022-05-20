@@ -1,36 +1,26 @@
 <template>
     <div class="item-container">
         <!-- <img :src="require(`@/assets/images/${item.image}`)" alt=""> -->
-        <img :src="require(`@/assets/jpg/jamescook.jpg`)" alt="">
-        
+        <img src="~assets/jpg/salmon.jpeg" alt="james cook" class="image">
         <div class="text-container">
-            <h4> {{recipe.title}} </h4>
-            <p> {{recipe.steps}} </p>
+            <h4> {{recipeSection.title}} </h4>
+            <p> {{recipeSection.author}} </p>
+            <p> {{recipeSection.author}} </p>
+            <p> {{recipeSection.date}} </p>
         </div>
     </div>
-    
 </template>
 
 <script>
     // export default {
-    //     props: ['item']
+        
     // }
-
+    import my_items from '../pages/my_items.vue'
     export default {
-        props: ['recipe']
-    }
-
-    // import { mapState } from 'vuex';
-    // export default {
-    //     layout: "no-nav",
-    //     computed: {
-    //         ...mapState([
-    //             'recipes'
-    //         ])
-    //     }
-    // }
+        components: { my_items },
+            props: ["recipeSection"] // property pasted into the   `:recipeSection="cardInfo"`
+        }
 </script>
-
 <style scoped>
     .item-container {
         display: flex;

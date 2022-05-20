@@ -11,6 +11,9 @@
   "Tutorial": {
     "description": "Auto imported from components/Tutorial.vue"
   },
+  "Myitemscard": {
+    "description": "Auto imported from components/myitemscard.vue"
+  },
   "RecipeDetails": {
     "description": "Auto imported from components/recipe_details.vue"
   },

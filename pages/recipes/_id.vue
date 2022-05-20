@@ -2,6 +2,7 @@
     <div>
         Hello I am recipe /recipe/id
         {{recipe}}
+        this is the _id.vue page
         <!-- as we named it '_id' -->
     </div>
 </template
