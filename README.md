@@ -15,6 +15,9 @@ $ npm run start
 
 # generate static project
 $ npm run generate
+
+#if the porject cannot run due to node 17
+$ export NODE_OPTIONS=--openssl-legacy-provider  
 ```
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
