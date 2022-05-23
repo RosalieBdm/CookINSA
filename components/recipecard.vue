@@ -35,30 +35,9 @@
 </template>
 
 <script>
-import { onMounted } from '@vue/runtime-core';
-import axios from 'axios';
-import back from '../back/';
-
     export default {
-        name: "recipecard",
-        data(){
-            return{
-                recipes: [],
-            }
-        },
-        methods: {
-            async getRecipes() {
-                // const data = axios.get('/', postController.readPost)
-                const data = axios.get(back.postController.readPost)
-            }
-        },
-        props: ["recipeSection"], // property pasted into the   `:recipeSection="cardInfo"`
-        mounted(){
-            axios
-            .get().then((response) => (this.recipe = response))
-        }
+        props: ["recipeSection"] // property pasted into the   `:recipeSection="cardInfo"`
     }
-
 </script>
 
 <style scoped>
