@@ -149,7 +149,7 @@
         }
         console.log(newRecipe)
 
-        axios.post('http://localhost:3000/Recipes', newRecipe)
+        axios.post('http://localhost:3000/api/post', newRecipe)
         .then ((response)=> {
         // this.recipes=response.data;
         alert("bonjour")

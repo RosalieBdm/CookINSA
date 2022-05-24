@@ -81,7 +81,7 @@
       }
     },
     mounted(){
-      axios.get('http://localhost:3000/Recipes')
+      axios.get('http://localhost:3000/api/post')
       // axios.get('mongodb+srv://SB-Test:test@cluster0.xqkxz.mongodb.net/mern-project')
       .then ((response)=> {
         // this.recipes=response.data;
