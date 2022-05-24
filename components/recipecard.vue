@@ -1,18 +1,19 @@
 <template>
-    <NuxtLink :to="'/recipes/${recipeSection.id}'" class="card">
+    <!-- <NuxtLink :to="'/recipes/${recipeSection.id}'" class="card"> -->
+    <div class="card">
         <h3 class="header">
-            {{recipeSection.title}}
+            {{recipeSection.Title}}
         </h3>
 
         <p class="snippet">
-            {{recipeSection.author}}
+            {{recipeSection.Pseudo}}
              - 
-            {{recipeSection.date}}
+            {{recipeSection.createdAt}}
         </p>
         
 
         <p class="category">
-            {{recipeSection.category}}
+            {{recipeSection.Category}}
         </p>
 
         <div class="image">
@@ -30,33 +31,32 @@
             {{recipeSection.steps}}
         </p> -->
         
-        
-    </NuxtLink>
+    </div>
+    <!-- </NuxtLink> -->
 </template>
 
 <script>
-import { onMounted } from '@vue/runtime-core';
-import axios from 'axios';
-import back from '../back/';
+    // import axios from 'axios';
+// import back from '../back/';
 
     export default {
-        name: "recipecard",
-        data(){
-            return{
-                recipes: [],
-            }
-        },
-        methods: {
-            async getRecipes() {
-                // const data = axios.get('/', postController.readPost)
-                const data = axios.get(back.postController.readPost)
-            }
-        },
         props: ["recipeSection"], // property pasted into the   `:recipeSection="cardInfo"`
-        mounted(){
-            axios
-            .get().then((response) => (this.recipe = response))
-        }
+        name: "recipecard",
+        // data(){
+        //     return{
+        //         recipes: [],
+        //     }
+        // },
+        // methods: {
+        //     async getRecipes() {
+        //         // const data = axios.get('/', postController.readPost)
+        //         let data = axios.get('http://localhost:3000/recipe') // avec le bon lien
+        //     }
+        // },
+        // mounted(){
+        //     axios
+        //     .get().then((response) => (this.recipe = response))
+        // }
     }
 
 </script>

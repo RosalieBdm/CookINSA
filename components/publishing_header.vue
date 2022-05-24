@@ -10,7 +10,7 @@
 </template>
 
 <script>
-    import Tutorial from '../components/Tutorial.vue'
+    import Tutorial from './newRecipe.vue'
     import { recipe_cards_data } from "@/assets/data.js"
 
 

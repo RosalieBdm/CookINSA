@@ -8,11 +8,11 @@
   "SavedItems": {
     "description": "Auto imported from components/Saved_items.vue"
   },
-  "Tutorial": {
-    "description": "Auto imported from components/Tutorial.vue"
-  },
   "Myitemscard": {
     "description": "Auto imported from components/myitemscard.vue"
+  },
+  "NewRecipe": {
+    "description": "Auto imported from components/newRecipe.vue"
   },
   "PublishingHeader": {
     "description": "Auto imported from components/publishing_header.vue"

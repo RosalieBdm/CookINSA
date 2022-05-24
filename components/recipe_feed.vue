@@ -3,7 +3,15 @@
         <div class="text-container">
             <h1 class="header">Latest Recipes 🥗</h1>
             <p class="snippet">Hello guys! Here students share their best recipes you can try at home 😁... Don't forget to add yours!!!!</p>
-            <button class="button btn">➕ Add recipe !</button>
+            <!-- <v-btn
+            to="../pages/publishing.vue"
+            @click="next"
+            class="button btn">btn
+            </v-btn> -->
+            <!-- @click="next"> -->
+            <router-link to="/publishing">
+                <button class="button btn">➕ Add recipe !</button>
+            </router-link>
         </div>
         <img src="~assets/jpg/jamescook.jpg" alt="james cook" class="image">
     </div>
@@ -43,6 +51,13 @@ import { mapState} from "vuex" // it maps every state from @/store/index.js and 
                 'data2',
                 'data3'
             ]) // the goal is to destructurized the original data and to separate dataNs
+        },
+        methods:{
+            next() {
+                // axios.post(...)
+                alert("bonjour")
+                print("a")
+            },
         }
     }
 </script>
