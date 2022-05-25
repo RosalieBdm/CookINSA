@@ -8,6 +8,7 @@ const cors = require('cors');
 
 const app = express();
 
+
 const corsOptions = {
   origin: process.env.CLIENT_URL,
   credentials: true,
@@ -16,7 +17,7 @@ const corsOptions = {
   'methods': 'GET,HEAD,PUT,PATCH,POST,DELETE',
   'preflightContinue': false
 }
-app.use(cors(corsOptions));
+app.use(cors(corsOptions)); 
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -33,6 +34,8 @@ port=4000;
 app.listen(port, () => {
   console.log('Listening on port' + port);
 })
+
+
 
 // app.listen(process.env.PORT, () => {
 //   console.log(`Listening on port ${process.env.PORT}`);

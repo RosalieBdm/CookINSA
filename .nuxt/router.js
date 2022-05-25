@@ -4,13 +4,13 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _55b9d4f4 = () => interopDefault(import('../pages/my_items.vue' /* webpackChunkName: "pages/my_items" */))
-const _7e5301a0 = () => interopDefault(import('../pages/profile.vue' /* webpackChunkName: "pages/profile" */))
-const _6b0e2968 = () => interopDefault(import('../pages/publishing.vue' /* webpackChunkName: "pages/publishing" */))
-const _4e77181f = () => interopDefault(import('../pages/recipes/index.vue' /* webpackChunkName: "pages/recipes/index" */))
-const _25941f3c = () => interopDefault(import('../pages/settings.vue' /* webpackChunkName: "pages/settings" */))
-const _6ada9647 = () => interopDefault(import('../pages/recipes/_id.vue' /* webpackChunkName: "pages/recipes/_id" */))
-const _c5625fee = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _08850d4e = () => interopDefault(import('../pages/my_items.vue' /* webpackChunkName: "pages/my_items" */))
+const _45c3576d = () => interopDefault(import('../pages/profile.vue' /* webpackChunkName: "pages/profile" */))
+const _97ecb342 = () => interopDefault(import('../pages/publishing.vue' /* webpackChunkName: "pages/publishing" */))
+const _e01dbfa8 = () => interopDefault(import('../pages/recipes/index.vue' /* webpackChunkName: "pages/recipes/index" */))
+const _4c2e830f = () => interopDefault(import('../pages/settings.vue' /* webpackChunkName: "pages/settings" */))
+const _993d84d8 = () => interopDefault(import('../pages/recipes/_id.vue' /* webpackChunkName: "pages/recipes/_id" */))
+const _5c843516 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -25,31 +25,31 @@ export const routerOptions = {
 
   routes: [{
     path: "/my_items",
-    component: _55b9d4f4,
+    component: _08850d4e,
     name: "my_items"
   }, {
     path: "/profile",
-    component: _7e5301a0,
+    component: _45c3576d,
     name: "profile"
   }, {
     path: "/publishing",
-    component: _6b0e2968,
+    component: _97ecb342,
     name: "publishing"
   }, {
     path: "/recipes",
-    component: _4e77181f,
+    component: _e01dbfa8,
     name: "recipes"
   }, {
     path: "/settings",
-    component: _25941f3c,
+    component: _4c2e830f,
     name: "settings"
   }, {
     path: "/recipes/:id",
-    component: _6ada9647,
+    component: _993d84d8,
     name: "recipes-id"
   }, {
     path: "/",
-    component: _c5625fee,
+    component: _5c843516,
     name: "index"
   }],
 

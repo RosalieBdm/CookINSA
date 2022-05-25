@@ -2,50 +2,50 @@
   {
     "name": "my_items",
     "path": "/my_items",
-    "component": "/Users/josephblanchard/Documents/insa3/pweb/CookINSA/pages/my_items.vue",
+    "component": "/Users/josephblanchard/Documents/insa3/pweb/CookINSA_/pages/my_items.vue",
     "chunkName": "pages/my_items",
-    "_name": "_55b9d4f4"
+    "_name": "_08850d4e"
   },
   {
     "name": "profile",
     "path": "/profile",
-    "component": "/Users/josephblanchard/Documents/insa3/pweb/CookINSA/pages/profile.vue",
+    "component": "/Users/josephblanchard/Documents/insa3/pweb/CookINSA_/pages/profile.vue",
     "chunkName": "pages/profile",
-    "_name": "_7e5301a0"
+    "_name": "_45c3576d"
   },
   {
     "name": "publishing",
     "path": "/publishing",
-    "component": "/Users/josephblanchard/Documents/insa3/pweb/CookINSA/pages/publishing.vue",
+    "component": "/Users/josephblanchard/Documents/insa3/pweb/CookINSA_/pages/publishing.vue",
     "chunkName": "pages/publishing",
-    "_name": "_6b0e2968"
+    "_name": "_97ecb342"
   },
   {
     "name": "recipes",
     "path": "/recipes",
-    "component": "/Users/josephblanchard/Documents/insa3/pweb/CookINSA/pages/recipes/index.vue",
+    "component": "/Users/josephblanchard/Documents/insa3/pweb/CookINSA_/pages/recipes/index.vue",
     "chunkName": "pages/recipes/index",
-    "_name": "_4e77181f"
+    "_name": "_e01dbfa8"
   },
   {
     "name": "settings",
     "path": "/settings",
-    "component": "/Users/josephblanchard/Documents/insa3/pweb/CookINSA/pages/settings.vue",
+    "component": "/Users/josephblanchard/Documents/insa3/pweb/CookINSA_/pages/settings.vue",
     "chunkName": "pages/settings",
-    "_name": "_25941f3c"
+    "_name": "_4c2e830f"
   },
   {
     "name": "recipes-id",
     "path": "/recipes/:id",
-    "component": "/Users/josephblanchard/Documents/insa3/pweb/CookINSA/pages/recipes/_id.vue",
+    "component": "/Users/josephblanchard/Documents/insa3/pweb/CookINSA_/pages/recipes/_id.vue",
     "chunkName": "pages/recipes/_id",
-    "_name": "_6ada9647"
+    "_name": "_993d84d8"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/josephblanchard/Documents/insa3/pweb/CookINSA/pages/index.vue",
+    "component": "/Users/josephblanchard/Documents/insa3/pweb/CookINSA_/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_c5625fee"
+    "_name": "_5c843516"
   }
 ]

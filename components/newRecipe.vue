@@ -18,25 +18,25 @@
         </p> -->
         <div>
           <label class="mt-4 pt-4 text-gray-800 border-t border-dashed">Dish Title</label>
-          <input v-model="rec.Title" class="form-control mr-sm-2" type="Name" placeholder="Recipe title" aria-label="titl">
+          <input v-model="rec.title" class="form-control mr-sm-2" type="Name" placeholder="Recipe title" aria-label="titl">
           <!-- <input v-model="rec.Title" v-mvodel.trim="title" class="form-control mr-sm-2" type="Name" placeholder="Recipe title" aria-label="title"> -->
 
         </div>
 
         <div>
           <label class="mt-4 pt-4 text-gray-800 border-t border-dashed">Pseudo</label>
-          <input v-model="rec.Pseudo" class="form-control mr-sm-2" type="Name" placeholder="Recipe pseudo" aria-label="pseu">
+          <input v-model="rec.pseudo" class="form-control mr-sm-2" type="Name" placeholder="Recipe pseudo" aria-label="pseu">
           <!-- <input v-model="rec.Pseudo" v-model.trim="pseudo" class="form-control mr-sm-2" type="Name" placeholder="Recipe title" aria-label="title"> -->
         </div>
 
         <div>
-          <label class="mt-4 pt-4 text-gray-800 border-t border-dashed">Category</label>
-          <input v-model="rec.Category" class="form-control mr-sm-2" type="Name" placeholder="Ex: pastas, fish..." aria-label="catego">
+          <label class="mt-4 pt-4 text-gray-800 border-t border-dashed">category</label>
+          <input v-model="rec.category" class="form-control mr-sm-2" type="Name" placeholder="Ex: pastas, fish..." aria-label="catego">
           <!-- <input v-model="rec.Pseudo" v-model.trim="pseudo" class="form-control mr-sm-2" type="Name" placeholder="Recipe title" aria-label="title"> -->
         </div>
 
         <div>
-          <label class="mt-4 pt-4 text-gray-800 border-t border-dashed">Ingredients</label>
+          <label class="mt-4 pt-4 text-gray-800 border-t border-dashed">ingredients</label>
           <input v-model="rec.ingredients" class="form-control mr-sm-2" type="Name" placeholder="Ex: floor, eggs..." aria-label="ingredien">
           <!-- <input v-model="rec.Pseudo" v-model.trim="pseudo" class="form-control mr-sm-2" type="Name" placeholder="Recipe title" aria-label="title"> -->
         </div>
@@ -121,9 +121,9 @@
       return {
         msg: "okkkkkk",
         rec: {
-          Title: '',
-          Pseudo: '',
-          Category: '',
+          title: '',
+          pseudo: '',
+          category: '',
           ingredients: '',
           steps: ''
         },
@@ -141,20 +141,21 @@
       addRecipe() {
         
         let newRecipe = {
-          Title: this.rec.Title,
-          Pseudo: this.rec.Pseudo,
-          Category: this.rec.Category,
-          ingredients: this.rec.ingredients,
-          steps: this.rec.steps
+          title: this.rec.title,
+          pseudo: this.rec.pseudo,
+          category: this.rec.category,
+          steps: this.rec.steps,
+          ingredients: this.rec.ingredients
         }
         console.log(newRecipe)
 
         // axios.post('http://localhost:3000/api/', newRecipe)
-        axios.post('http://localhost:4000/api/recipe/register/', newRecipe)
+        axios.post('http://localhost:4000/api/recipe/', newRecipe)
+        
 
         .then ((response)=> {
         // this.recipes=response.data;
-        alert("bonjour")
+        alert("Receipe Uploaded !")
       })
 
 

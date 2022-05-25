@@ -1,38 +1,39 @@
 <template>
-    <!-- <NuxtLink :to="'/recipes/${recipeSection.id}'" class="card"> -->
-    <div class="card">
-        <h3 class="header">
-            {{recipeSection.Title}}
-        </h3>
+    <nuxt-link :to="`/recipes/${recipeSection.title}`" class="card">
+        <!-- <div class="card"> -->
+            <h3 class="header">
+                {{recipeSection.title}}
+            </h3>
 
-        <p class="snippet">
-            {{recipeSection.Pseudo}}
-             - 
-            {{recipeSection.createdAt}}
-        </p>
-        
+            <p class="snippet">
+                {{recipeSection.pseudo}}
+                - 
+                {{recipeSection.createdAt}}
 
-        <p class="category">
-            {{recipeSection.Category}}
-        </p>
+                
+            </p>
+            
 
-        <div class="image">
-            <img src="~assets/jpg/bananabread.jpeg" alt="james cook" class="image">
-            <!-- <img :src="'~assets/jpg/${recipeSection.image}'" alt="fe" class="image"> -->
-        </div>
+            <p class="category">
+                {{recipeSection.category}}
+            </p>
 
-        <h4 class="subsection">INGREDIENTS</h4>
-        <p class="text-container">
-            {{recipeSection.ingredients}}
-        </p>
+            <!-- <div class="image">
+                <img src="~assets/jpg/bananabread.jpeg" alt="james cook" class="image">
+            </div> -->
 
-        <!-- <h4>STEPS</h4>
-        <p class="text-container">
-            {{recipeSection.steps}}
-        </p> -->
-        
-    </div>
-    <!-- </NuxtLink> -->
+            <h4 class="subsection">INGREDIENTS</h4>
+            <p class="text-container">
+                {{recipeSection.ingredients}}
+            </p>
+
+            <!-- <h4>STEPS</h4>
+            <p class="text-container">
+                {{recipeSection.steps}}
+            </p> -->
+            
+        <!-- </div> -->
+    </nuxt-link>
 </template>
 
 <script>
@@ -41,7 +42,7 @@
 
     export default {
         props: ["recipeSection"], // property pasted into the   `:recipeSection="cardInfo"`
-        name: "recipecard",
+        // name: "recipecard",
         // data(){
         //     return{
         //         recipes: [],

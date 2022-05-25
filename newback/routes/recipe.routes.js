@@ -6,6 +6,6 @@ router.get("/", recipeController.getAllRecipes);
 router.get("/:id", recipeController.recipeInfo);
 //router.put("/:id", authController.updateRecipe);
 //router.delete("/:id", authController.deleteRecipe);
-router.post("/register",authController.createRecipe);
+router.post("/",authController.createRecipe);
 
 module.exports = router;

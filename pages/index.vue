@@ -11,13 +11,13 @@
         :recipeSection="cardInfo"
       /> -->
 
-      <!-- <recipecard
+      <recipecard
         v-for="recipe in recipes"
         :key="recipe.title"
         :recipeSection="recipe"
-      /> -->
+      />
 
-      <tr class="card" v-for="recipe in recipes" :key="recipe.title">
+      <!-- <tr class="card" v-for="recipe in recipes" :key="recipe.title">
         <h3 class="header">
             {{recipe.Title}}
         </h3>
@@ -35,7 +35,6 @@
 
         <div class="image">
             <img src="~assets/jpg/bananabread.jpeg" alt="james cook" class="image">
-            <!-- <img :src="'~assets/jpg/${recipeSection.image}'" alt="fe" class="image"> -->
         </div>
 
         <h4 class="subsection">INGREDIENTS</h4>
@@ -43,12 +42,12 @@
             {{recipe.ingredients}}
         </p>
 
-        <!-- <h4>STEPS</h4>
+        <h4>STEPS</h4>
         <p class="text-container">
             {{recipeSection.steps}}
-        </p> -->
+        </p>
         
-      </tr>
+      </tr> -->
 
       <!-- <recipe_details
         v-for="cardInfo in recipeCardsInfo"
@@ -82,10 +81,10 @@
     },
     mounted(){
       // axios.get('http://localhost:3000/api/post')
-      axios.get('http://localhost:4000/api/recipe/register/')
+      axios.get('http://localhost:4000/api/recipe/')
       // axios.get('mongodb+srv://SB-Test:test@cluster0.xqkxz.mongodb.net/mern-project')
       .then ((response)=> {
-        // this.recipes=response.data;
+        this.recipes=response.data;
         console.log(response.data);
       })
       .catch((error)=> {
