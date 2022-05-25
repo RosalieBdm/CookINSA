@@ -42,16 +42,27 @@
 
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="🔎 Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <input class="form-control mr-sm-2" v-model="search.S" type="search" placeholder="🔎 Search" aria-label="Search">
+                <router-link :to="`/recipes/${search.S}`">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit" :to="`/recipes/${search.S}`">Search</button> -->
+                    <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit" @click="request" :to="`/recipes/${search}`">Search</button> -->
+                </router-link>
             </form>
         </div>
     </nav>
 </template>
 
 <script>
+name: "navBar"
     export default {
-        
+        data() {
+            return {
+                search: {
+                    S: ''
+                },
+            }
+        }
     }
 </script>
 

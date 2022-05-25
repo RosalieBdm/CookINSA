@@ -13,7 +13,7 @@
                 <button class="button btn">➕ Add recipe !</button>
             </router-link>
         </div>
-        <img src="~assets/jpg/jamescook.jpg" alt="james cook" class="image">
+        <!-- <img src="~assets/jpg/jamescook.jpg" alt="james cook" class="image"> -->
     </div>
     <!-- <div> -->
     <!-- <v-container> -->
@@ -68,7 +68,7 @@ import { mapState} from "vuex" // it maps every state from @/store/index.js and 
         height: 50vh;
         position: relative;
         display: flex;
-        padding: 5rem 0;
+        padding: 1rem 0;
         align-items: flex-start;
         justify-content: space-between;
     }
@@ -130,6 +130,6 @@ import { mapState} from "vuex" // it maps every state from @/store/index.js and 
         }
     }
     .recipe_feed {
-        margin-bottom: 5rem;
+        margin-bottom: 1rem;
     }
 </style>

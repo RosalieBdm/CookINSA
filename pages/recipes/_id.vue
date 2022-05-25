@@ -1,8 +1,6 @@
 <template>
     <div>
         <Nav />
-        Hello _id : 
-        {{$route.params.id}}
         
         <div v-for="rec in recipes" :key="rec.title"  class="recipe">
             <tr v-if="rec.title == $route.params.id">
